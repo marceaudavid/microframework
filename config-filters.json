@@ -1,0 +1,18 @@
+{
+  "steps": {
+    "1": {
+      "filter": "read",
+      "params": ["/"],
+      "next": "2"
+    },
+    "2": {
+      "filter": "capitalize",
+      "params": ["lorem ipsum"],
+      "next": "3"
+    },
+    "3": {
+      "filter": "reverse",
+      "params": ["lorem ipsum"]
+    }
+  }
+}
