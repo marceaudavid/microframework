@@ -1,13 +1,7 @@
-fs = require('fs')
+fs = require('fs');
 
 module.exports = (path, text) => {
-    fs.appendFile(path, text, (err, data) => {
-        if (err) {
-            console.log(err);
-            return err;
-        }
-        console.log(`filter 'write': ${data}`);
-        return data;
-    });
-}
-
+  fs.writeFileSync(path, text);
+  console.log(`filter 'write': ${text}`);
+  return text;
+};

@@ -1,12 +1,7 @@
 fs = require('fs');
 
 module.exports = (path) => {
-    fs.readFile(path, 'utf8', function (err, data) {
-        if (err) {
-            console.log(err);
-            return err;
-        }
-        console.log(`filter 'read': ${data}`);
-        return data;
-    });
-}
+  let data = fs.readFileSync(path, 'utf8');
+  console.log(`filter 'read': ${data}`);
+  return data;
+};

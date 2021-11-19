@@ -15,7 +15,7 @@
     },
     "4": {
       "filter": "write",
-      "params": ["text.txt", "lorem ipsum"]
+      "params": ["text.txt"]
     }
   }
 }
