@@ -2,17 +2,20 @@
   "steps": {
     "1": {
       "filter": "read",
-      "params": ["/"],
+      "params": ["text.txt"],
       "next": "2"
     },
     "2": {
       "filter": "capitalize",
-      "params": ["lorem ipsum"],
       "next": "3"
     },
     "3": {
       "filter": "reverse",
-      "params": ["lorem ipsum"]
+      "next": "4"
+    },
+    "4": {
+      "filter": "write",
+      "params": ["text.txt", "lorem ipsum"]
     }
   }
 }
